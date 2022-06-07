@@ -1,0 +1,125 @@
+:root{
+    --bg-color: #000;
+    --text-color: #fff;
+    --hl-color: #66fcf1;
+    --text-sd-color: #CE5937;
+    --lavender-color: #E6E6FA;
+    --light-oran-color: #F7AE8F;
+    --bg-gradient: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,253,168,1) 48%, rgba(252,176,69,1) 100%);
+}
+
+body{
+    position: relative;
+    color: var(--text-color) !important;
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-color);
+    padding: 1rem;
+    z-index: 999;
+}
+
+#logo{
+    width: 300px;
+}
+
+#user-avatar{
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+#home-slide-bg{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./images/home-slide-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#home-slide-bg>h1{
+    position: absolute;
+    top: calc(50% - 270px);
+    right: calc(50% - 227px);
+    text-shadow: 3px 3px 2px var(--bg-color);
+}
+
+#home-slider{
+    position: absolute;
+    top: calc(50% - 200px);
+    right: calc(50% - 475px);
+    border-radius: 3px;
+    height: 500px;
+    width: 950px;
+    overflow: hidden;
+}
+
+.slide-item{
+    height: 500px;
+    width: 950px;
+    background-size: contain;
+}
+
+#film-list{
+    color: var(--bg-color) !important;
+}
+
+#film-list h1{
+    text-align: center;
+    margin: 24px 0;
+}
+
+.card{
+    position: relative;
+    cursor: pointer;
+}
+
+.card-img-top{
+    height: 384px !important;
+}
+
+.close-btn{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
+
+.ticketbox{
+    overflow-x: auto;
+    text-align: center;
+}
+
+.screen{
+    width: 100%;
+    height: 45px;
+    margin: 20px auto 100px;
+    text-align: center;
+    background: url(./images/bg-screen.png) no-repeat top center transparent;
+    background-size: 100% auto;
+}
+
+.seat{
+    display: inline-block;
+    width: 32px !important;
+    padding: 4px !important;
+    height: 32px;
+    border: 2px solid var(--bs-green);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.seat-selected{
+    border-color: var(--bs-red) !important;
+}
+
+.seat-purchased{
+    background-color: var(--bs-grey);
+}
